@@ -4,6 +4,10 @@
 # Do not make changes to this file unless you know what you are doing--modify
 # the SWIG interface file instead.
 
+"""
+代码由主办方提供， 用于读取kfb类型数据
+"""
+
 from sys import version_info as _swig_python_version_info
 
 if _swig_python_version_info >= (2, 7, 0):
