@@ -15,6 +15,10 @@ import copy
 
 
 class ResNet(torch.nn.Module):
+    """
+    把ResNet第一个卷积的 7*7 改成3个3*3
+    计算量高了很多。。。
+    """
     def __init__(self, model=torchvision.models.resnet50()):
         super(ResNet, self).__init__()
         # self.conv1 = nn.Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
