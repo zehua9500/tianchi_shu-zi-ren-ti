@@ -230,13 +230,6 @@ class Data_preprocess():
         iou = i / (u - i + 1e-5)
         return iou
 
-    @staticmethod
-    def AP(vec1, vec2, threshold):
-        matrix = Data_preprocess.get_iouMatrix(vec1, vec2) > threshold
-        TP = np.sum(np.sum(matrix, axis=0) > 0)
-        FP = np.sum(np.sum(matrix, axis=1) == 0)
-        FN = np.sum(np.sum(matrix, axis=0) == 0)
-        return [TP, FP, FN]
 
     @staticmethod
     def get_gt(gt):
