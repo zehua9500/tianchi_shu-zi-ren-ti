@@ -92,7 +92,7 @@ class Data_preprocess():
         return Info
 
     @staticmethod
-    def knnSeekAnchor(hw, anchor_num=9, iter_num=50):
+    def kmeansSeekAnchor(hw, anchor_num=9, iter_num=50):
         """
         :param hw: numpy文件，shape= [N,2] 存放hw,N为bbox数
         :param anchor_num: 聚类中心数
